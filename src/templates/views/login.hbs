@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <style>
+      body { margin: 0; padding: 0; background-color: #f1f1f1; font-family:
+      Arial, sans-serif; } .form-container { display: flex; justify-content:
+      center; align-items: center; height: 100vh; } .form { background-color:
+      #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0,
+      0, 0.2); margin: 0 10px; } h2 { margin-top: 0; } label { display: block;
+      margin-bottom: 5px; } input[type="text"], input[type="email"],
+      input[type="password"] { padding: 10px; border-radius: 5px; border: none;
+      margin-bottom: 10px; width: 100%; } input[type="submit"] {
+      background-color: #4caf50; color: #fff; padding: 10px 20px; border: none;
+      border-radius: 5px; cursor: pointer; }
+
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form">
+        <h2>Login Page</h2>
+        <form action="/login" method="post">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <input type="submit" value="Login" />
+        </form>
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+      </div>
+    </div>
+  </body>
+</html>
